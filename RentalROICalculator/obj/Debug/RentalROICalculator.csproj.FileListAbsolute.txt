@@ -1,0 +1,14 @@
+C:\Users\Shan\source\repos\RentalROICalculator\RentalROICalculator\obj\Debug\RentalROICalculator.csprojAssemblyReference.cache
+C:\Users\Shan\source\repos\RentalROICalculator\RentalROICalculator\obj\Debug\App.g.cs
+C:\Users\Shan\source\repos\RentalROICalculator\RentalROICalculator\obj\Debug\RentalROICalculator_MarkupCompile.cache
+C:\Users\Shan\source\repos\RentalROICalculator\RentalROICalculator\bin\Debug\RentalROICalculator.exe.config
+C:\Users\Shan\source\repos\RentalROICalculator\RentalROICalculator\bin\Debug\RentalROICalculator.exe
+C:\Users\Shan\source\repos\RentalROICalculator\RentalROICalculator\bin\Debug\RentalROICalculator.pdb
+C:\Users\Shan\source\repos\RentalROICalculator\RentalROICalculator\obj\Debug\MainWindow.g.cs
+C:\Users\Shan\source\repos\RentalROICalculator\RentalROICalculator\obj\Debug\RentalROICalculator_MarkupCompile.lref
+C:\Users\Shan\source\repos\RentalROICalculator\RentalROICalculator\obj\Debug\MainWindow.baml
+C:\Users\Shan\source\repos\RentalROICalculator\RentalROICalculator\obj\Debug\RentalROICalculator.g.resources
+C:\Users\Shan\source\repos\RentalROICalculator\RentalROICalculator\obj\Debug\RentalROICalculator.Properties.Resources.resources
+C:\Users\Shan\source\repos\RentalROICalculator\RentalROICalculator\obj\Debug\RentalROICalculator.csproj.GenerateResource.cache
+C:\Users\Shan\source\repos\RentalROICalculator\RentalROICalculator\obj\Debug\RentalROICalculator.exe
+C:\Users\Shan\source\repos\RentalROICalculator\RentalROICalculator\obj\Debug\RentalROICalculator.pdb

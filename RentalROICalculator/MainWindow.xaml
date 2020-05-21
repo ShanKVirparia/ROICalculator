@@ -1,0 +1,79 @@
+﻿<Window x:Class="RentalROICalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RentalROICalculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="Auto" Width="Auto">
+    <Grid Margin="0,0,0,0">
+
+        <!--Income Section-->
+
+        <Label x:Name="Income" Content="Income" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.414,1.269" Width="80" AutomationProperties.Name="Income" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="Income_Rent" Content="Rent" HorizontalAlignment="Left" Margin="24,41,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Income_Misc" Content="Misc Income" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,72,0,0" RenderTransformOrigin="0.579,0.202"/>
+        <Label x:Name="Income_Total" Content="Total" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,103,0,0"/>
+        <TextBox x:Name="IncomeRent" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="111,45,0,0" TextChanged="IncomeRent_TextChanged"/>
+        <TextBox x:Name="IncomeMisc" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="111,76,0,0" TextChanged="IncomeMisc_TextChanged"/>
+        <TextBox x:Name="IncomeTotal" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="111,108,0,0" TextChanged="IncomeTotal_TextChanged"/>
+
+
+        <!--Expense Section-->
+
+        <Label x:Name="Expenses" Content="Expenses" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.967,6.558" Margin="24,150,0,0" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="Expenses_Mortgage" Content="Mortgage" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,181,0,0"/>
+        <Label x:Name="Expenses_Taxes" Content="Taxes" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,212,0,0"/>
+        <Label x:Name="Expenses_Insurance" Content="Insurance" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="3.382,12.183" Margin="24,243,0,0"/>
+        <Label x:Name="Expenses_HOA" Content="HOA" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,269,0,0"/>
+        <Label x:Name="Expenses_Repairs" Content="Repairs" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,300,0,0"/>
+        <Label x:Name="Expenses_PropertyManager" Content="Property Manager" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-2,335,0,0" RenderTransformOrigin="-0.064,0.692"/>
+        <Label x:Name="Expenses_Misc" Content="Misc" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,362,0,0"/>
+        <Label x:Name="Expenses_Total" Content="Total" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,393,0,0"/>
+        <TextBox x:Name="ExpensesMortgage" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="111,185,0,0" TextChanged="ExpensesMortgage_TextChanged"/>
+        <TextBox x:Name="ExpensesTaxes" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="111,218,0,0" TextChanged="ExpensesTaxes_TextChanged"/>
+        <TextBox x:Name="ExpensesInsurance" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="111,246,0,0" TextChanged="ExpensesInsurance_TextChanged"/>
+        <TextBox x:Name="ExpensesHOA" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="111,272,0,0" TextChanged="ExpensesHOA_TextChanged"/>
+        <TextBox x:Name="ExpensesRepairs" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="111,303,0,0" TextChanged="ExpensesRepairs_TextChanged"/>
+        <TextBox x:Name="ExpensesPropertyManager" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="111,335,0,0" TextChanged="ExpensesPropertyManager_TextChanged"/>
+        <TextBox x:Name="ExpensesMisc" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="111,369,0,0" TextChanged="ExpensesMisc_TextChanged"/>
+        <TextBox x:Name="ExpensesTotal" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="111,396,0,0" TextChanged="ExpensesTotal_TextChanged"/>
+
+
+        <!--Cash Flow Section-->
+
+        <Label x:Name="CashFlow" Content="Cash Flow" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="14.171,2.76" Margin="338,10,0,0" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="CashFlow_Income" Content="Total Income" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="338,41,0,0"/>
+        <Label x:Name="CashFlow_Expenses" Content="Total Expenses" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="338,72,0,0"/>
+        <Label x:Name="CashFlowTotal" Content="Total Cash Flow" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="338,104,0,0"/>
+        <TextBox x:Name="CashFlowIncome" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="446,45,0,0" TextChanged="CashFlowIncome_TextChanged" MouseEnter="CashFlowIncome_MouseEnter"/>
+        <TextBox x:Name="CashFlowExpenses" HorizontalAlignment="Left" Height="23" Margin="446,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="CashFlowExpenses_TextChanged" MouseEnter="CashFlowExpenses_MouseEnter"/>
+        <TextBox x:Name="_CashFlowTotal" HorizontalAlignment="Left" Height="23" Margin="446,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="_CashFlowTotal_TextChanged" MouseEnter="_CashFlowTotal_MouseEnter"/>
+
+        <!--Upfront Cost-->
+
+        <Label x:Name="UpfrontCost" Content="Upfront Cost" HorizontalAlignment="Left" Margin="338,150,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="DownPayment" Content="Down Payment" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="338,181,0,0"/>
+        <Label x:Name="ClosingCost" Content="Closing Cost" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="338,212,0,0"/>
+        <Label x:Name="MiscCost" Content="Misc Cost" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="338,244,0,0" RenderTransformOrigin="0.344,0.577"/>
+        <Label x:Name="CostTotal" Content="Cost Total" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="338,269,0,0"/>
+        <TextBox x:Name="CostDownPayment" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="446,185,0,0" TextChanged="CostDownPayment_TextChanged"/>
+        <TextBox x:Name="CostClosingCost" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="446,216,0,0" TextChanged="CostClosingCost_TextChanged"/>
+        <TextBox x:Name="CostMiscCost" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="446,247,0,0" TextChanged="CostMiscCost_TextChanged"/>
+        <TextBox x:Name="UpfrontCostTotal" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="446,275,0,0" TextChanged="UpfrontCostTotal_TextChanged"/>
+
+        <!--ROI-->
+        <Label x:Name="ROISection" Content="ROI" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="338,331,0,0" FontWeight="Bold" RenderTransformOrigin="0.984,0.606" FontSize="14"/>
+        <Label x:Name="ROI" Content="ROI" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="338,362,0,0"/>
+        <TextBox x:Name="_ROI" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="446,365,0,0" TextChanged="_ROI_TextChanged" MouseEnter="_ROI_MouseEnter"/>
+
+        <!--Clear Form Button-->
+        <Button x:Name="ClearButton" Content="Clear Form" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" Margin="308,477,0,-20" FontWeight="Bold" Click="ClearButton_Click"/>
+
+
+
+
+
+
+    </Grid>
+</Window>
